@@ -1,3 +1,46 @@
-body{
-    text-align: center;
+
+body {
+  background-color: #fdf6e3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar {
+  background-color: #ffebcd !important; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #6b4c3b !important;
+}
+
+.nav-link {
+  color: #6b4c3b !important;
+
+  &:hover {
+    color: #d2691e !important;
+  }
+}
+
+
+.btn-outline-success {
+  border-color: #d2691e;
+  color: #d2691e;
+
+  &:hover {
+    background-color: #d2691e;
+    color: white;
+  }
+}
+
+
+.carousel {
+  margin-top: 20px;
+
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 }
