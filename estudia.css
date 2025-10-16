@@ -1,0 +1,122 @@
+
+.navbar {
+  background-color: #ffebcd !important; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* === CENTRADO PARA PANTALLAS GRANDES === */
+.navbar .container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Marca centrada arriba */
+.navbar-brand {
+  font-weight: bold;
+  color: #6b4c3b !important;
+  margin-bottom: 8px;
+}
+
+/* Menú centrado y separado */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.nav-link {
+  color: #6b4c3b !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #d2691e !important;
+}
+
+/* Botón estilo */
+.btn-outline-success {
+  border-color: #d2691e;
+  color: #d2691e;
+  transition: 0.3s;
+}
+
+.btn-outline-success:hover {
+  background-color: #d2691e;
+  color: white;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .container-fluid {
+    flex-direction: row;         /* vuelve todo en línea */
+    justify-content: space-between; /* logo izquierda, botón derecha */
+    align-items: center;
+  }
+
+  .navbar-brand {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.universidades-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  margin-top: 120px;
+}
+
+.universidades-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #5a3d2b;
+}
+
+.universidad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  background: #fffaf3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.universidad img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.universidad .info {
+  flex: 1;
+}
+
+.universidad h3 {
+  color: #6b4c3b;
+  margin-bottom: 10px;
+}
+
+.universidad p {
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .universidad {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .universidad img {
+    margin: 15px 0 0 0;
+  }
+}
