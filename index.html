@@ -14,9 +14,9 @@
 <body>
 
   <!-- Navbar de Bootstrap -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Amor Pastelero</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
               aria-expanded="false" aria-label="Toggle navigation">
@@ -24,6 +24,31 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- contenido aquí -->
+         <div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#CocinaMundo">Enlace</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                Desplegable
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Acción</a></li>
+                <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Deshabilitado</a>
+            </li>
+          </ul>
+         </div>
       </div>
     </div>
   </nav>
@@ -32,10 +57,16 @@
   <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://via.placeholder.com/800x300" class="d-block w-100" alt="...">
+        <img src="./tiramitsu.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="https://via.placeholder.com/800x300" class="d-block w-100" alt="...">
+        <img src="./eclair.jpg" class="d-block w-100" alt="...">
+      </div>
+       <div class="carousel-item">
+        <img src="./mochi.jpg" class="d-block w-100" alt="...">
+      </div>
+       <div class="carousel-item">
+        <img src="./sache.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -47,6 +78,102 @@
       <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
+
+  <h1 class="CocinaMundo">Cocina Pastelera Mas Reconocida</h1>
+<!--tabla de contenido-->
+ <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Italiana</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Francesa</button>
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Japonesa</button>
+    <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Austriaca</button>
+  </div>
+</nav>
+
+<div class="tab-content" id="nav-tabContent">
+
+  <!-- PASTELERÍA ITALIANA -->
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+    <h3>Pastelería Italiana</h3>
+    <p>La pastelería italiana se caracteriza por su simplicidad elegante y el uso de ingredientes frescos y de alta calidad. Se basa en técnicas tradicionales con un equilibrio perfecto entre dulzura y texturas. Utiliza frecuentemente frutos secos, mascarpone, café y cítricos.</p>
+    <h4>Postres Típicos</h4>
+    <ul>
+      <h5>Tiramisú</h5>
+      <p>Postre de origen veneciano compuesto por capas de bizcocho de soletas embebidas en café y crema de mascarpone con huevo y azúcar. Se espolvorea con cacao en polvo y se refrigera antes de servir, resultando en un postre cremoso con contraste de sabores entre el café amargo y la dulzura de la crema.</p>
+
+      <h5>Cannoli Siciliani</h5>
+      <p>Originarios de Sicilia, son cilindros crujientes de masa frita rellenos de ricotta dulce mezclada con azúcar, chocolate picado y frutas confitadas. Los extremos suelen decorarse con pistachos picados o cerezas, ofreciendo un contraste entre el exterior crujiente y el relleno cremoso.</p>
+
+      <h5>Panna Cotta</h5>
+      <p>Postre del Piamonte cuyo nombre significa "crema cocida". Consiste en una crema de nata, azúcar y vainilla cuajada con gelatina, servida fría con coulis de frutos rojos o caramelo. Destaca por su textura sedosa y suave que se derrite en la boca.</p>
+
+      <h5>Panettone</h5>
+      <p>Dulce milanés tradicional de Navidad con forma de cúpula alta. Es un bollo esponjoso con pasas, frutas confitadas y cáscara de cítricos, elaborado mediante una fermentación lenta que le da su textura aireada característica y sabor ligeramente dulce.</p>
+    </ul>
+  </div>
+
+  <!-- PASTELERÍA FRANCESA -->
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+    <h3>Pastelería Francesa</h3>
+    <p>La pastelería francesa es técnica, precisa y sofisticada. Se basa en métodos científicos de preparación y presenta un acabado impecable. Utiliza buttercreams, cremas pasteleras, hojaldre y chocolate de alta calidad, con énfasis en la estructura y elegancia visual.</p>
+    <h4>Postres Típicos</h4>
+    <ul>
+      <h5>Éclair</h5>
+      <p>Palito de masa choux relleno de crema pastelera o nata y glaseado con fondant. Los sabores clásicos incluyen chocolate, café y vainilla, aunque existen variaciones modernas con frutas y sabores innovadores. Su nombre significa "relámpago", posiblemente por su brillo o porque se come rápido.</p>
+
+      <h5>Macaron</h5>
+      <p>Galleta crujiente por fuera y suave por dentro, hecha de almendra molida, clara de huevo y azúcar, unida por un relleno de ganache, mantequilla o mermelada. Requiere gran precisión en su elaboración y se caracteriza por su base plana y cúpula lisa, con el característico "pie" en la base.</p>
+
+      <h5>Tarte Tatin</h5>
+      <p>Tarta de manzana caramelizada cocida al revés, donde las frutas se caramelizan con mantequilla y azúcar antes de añadir la masa. Al servirla se voltea, mostrando las manzanas caramelizadas en la superficie. Creada accidentalmente por las hermanas Tatin en el siglo XIX.</p>
+
+      <h5>Mille-feuille</h5>
+      <p>Significa "mil hojas" y consiste en capas crujientes de hojaldre alternadas con crema pastelera. Tradicionalmente se espolvorea con azúcar glas o se glasea con fondant blanco con líneas de chocolate, creando un contraste textural entre la masa crujiente y el relleno suave.</p>
+    </ul>
+  </div>
+
+  <!-- PASTELERÍA JAPONESA -->
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+    <h3>Pastelería Japonesa</h3>
+    <p>La pastelería japonesa (wagashi) prioriza la estética, la estacionalidad y la armonía de sabores. Es delicada, poco dulce y frecuentemente utiliza ingredientes como el matcha, frijol rojo (anko) y arroz glutinoso. La presentación es tan importante como el sabor.</p>
+    <h4>Postres Típicos</h4>
+    <ul>
+      <h5>Dorayaki</h5>
+      <p>Consiste en dos tortitas esponjosas similares a pancakes, unidas por un relleno de anko (pasta dulce de judías rojas). De textura suave y sutilmente dulce, es uno de los dulces más populares y conocido internacionalmente por ser el favorito del personaje Doraemon.</p>
+
+      <h5>Mochi</h5>
+      <p>Dulce glutinoso hecho de arroz mochigome machacado hasta lograr una textura elástica y masticable. Puede rellenarse con anko, helado (mochi ice cream) o consumirse simple, frecuentemente acompañado de té verde. Representa la importancia de las texturas únicas en la gastronomía japonesa.</p>
+
+      <h5>Taiyaki</h5>
+      <p>Postre con forma de pez (símbolo de buena suerte) hecho de masa de pancake crujiente por fuera y esponjosa por dentro, relleno tradicionalmente de anko, aunque modernamente también de chocolate, crema pastelera o queso. Se cocina en planchas especiales con moldes en forma de pez.</p>
+
+      <h5>Matcha Roll Cake</h5>
+      <p>Bizcocho esponjoso de té matcha enrollado con crema batida ligeramente dulce. Combina el sabor terroso y ligeramente amargo del matcha con la suavidad de la crema, representando la fusión entre técnicas occidentales e ingredientes tradicionales japoneses.</p>
+    </ul>
+  </div>
+
+  <!-- PASTELERÍA AUSTRIACA -->
+  <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+    <h3>Pastelería Austriaca</h3>
+    <p>La pastelería austriaca refleja la herencia imperial de Viena, con influencias centroeuropeas. Se caracteriza por masas ricas en mantequilla, uso de especias como la canela y el cardamomo, y rellenos de frutas, nueces y cremas. Es contundente pero refinada.</p>
+    <h4>Postres Típicos</h4>
+    <ul>
+      <h5>Sachertorte</h5>
+      <p>Tarta de chocolate inventada en el Hotel Sacher de Viena, compuesta por un bizcocho denso de chocolate, relleno de mermelada de albaricoque y cubierta con un glaseado de chocolate oscuro. Se sirve tradicionalmente con nata montada sin azúcar para contrastar su intenso sabor a chocolate.</p>
+
+      <h5>Apfelstrudel</h5>
+      <p>Postre de masa filo extremadamente fina y estirada a mano, rellena de manzanas, pasas, canela y pan rallado. Se enrolla y hornea hasta que la masa queda crujiente y dorada. Representa la influencia otomana en la gastronomía austriaca y se sirve caliente espolvoreado con azúcar glas.</p>
+
+      <h5>Kaiserschmarrn</h5>
+      <p>Trozos esponjosos de panqueque rasgado, enriquecido con pasas y servido espolvoreado con azúcar glas. Tradicionalmente acompañado de compota de ciruelas. Su nombre significa "desgreñado del Emperador" y era un postre favorito del emperador Francisco José I.</p>
+
+      <h5>Linzer Torte</h5>
+      <p>Considerada una de las tartas más antiguas del mundo, consiste en una base de masa quebrada con almendras y especias, cubierta con mermelada de grosella o frambuesa y una característica rejilla de masa en la superficie. Originaria de Linz, tiene un sabor aromático y textura arenosa.</p>
+    </ul>
+  </div>
+
+</div>
+
 
   <!-- JS de Bootstrap desde CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
